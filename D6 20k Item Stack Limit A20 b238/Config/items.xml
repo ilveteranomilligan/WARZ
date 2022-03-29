@@ -1,0 +1,22 @@
+<items>
+
+	<set xpath="/items/item[starts-with(@name, 'food')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'drink')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'ammo')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'medical')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'drug')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'resource')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'ammoGasCan')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'thrown')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'tool')]/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[starts-with(@name, 'book')]/property[@name='Stacknumber']/@value">20000</set>
+
+	<set xpath="/items/item[@name='partsMaster']/property[@name='Stacknumber']/@value">20000</set>	
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[@name='blankNoteMaster']/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[@name='candle']/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='Stacknumber']/@value">20000</set>
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">20000</set>
+	
+</items>

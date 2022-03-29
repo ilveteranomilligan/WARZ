@@ -1,0 +1,448 @@
+<!-- 
+More  Lights Mod ready for A20 
+Sorry for the Delay
+
+But hey, they have their own light values now!
+
+
+
+This XML file has to be named the same as its vanilla file. If you are editing items.xml, this file needs to be called items.xml
+
+Here are some example xpath:
+	Changes the Light value to 0.45
+  	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='LightValue']/@value">0.45</set>
+	
+	Adds in a new torch at the bottom of the items.xml
+	<append xpath="/items" >
+		<item name="AnothermeleeToolTorch">
+			<property name="Extends" value="meleeToolTorch"/>
+			<property name="LightValue" value="1" />
+		</item>
+	</append>
+	
+	Deletes the torch.
+	<remove xpath="/items/item[@name='meleeToolTorch']" />
+	
+-->
+<configs>
+
+<append xpath="/blocks/block[@name='ceilingLight01_player']">
+	<property name="Light" value="0.4"/>
+</append>
+
+
+<append xpath="/blocks" >	
+<!-- Industrial Light 01-->
+
+<!-- Porch Light  01  Old  Outdoor Light -->
+<block name="modLightPorchLight01">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="porchLight01"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/porchLight01Prefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="Light" value="0.6"/>
+
+</block>
+
+<!-- Porch Light 04  Brass  Edition -->
+<block name="modLightPorchLight04Brass">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="porchLight04Brass"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="Light" value="0.6"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="3"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+<!-- Porch Light 04  -->
+<block name="modLightPorchLight04">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="porchLight04"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/porchLight04Prefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="Light" value="0.6"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!-- CeilingLight02 Silver Dome light  -->
+<block name="modLightCeilingLight02">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight02"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/ceilingLight02Prefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.6"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!-- CeilingLight02 Silver Dome light Brass Edition -->
+<block name="modLightCeilingLight02Brass">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight02Brass"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="3"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!-- Ceiling Light 05  is  pretty much 04 tell me a difference ... :)  -->
+<block name="modLightCeilingLight05">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight05"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/ceilingLight05Prefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+<!--  Ceiling  Light 05 Brass  Edition -->
+<block name="modLightCeilingLight05Brass">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight05Brass"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="3"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<block name="modLightCeilingLight04">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight04"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Model" value="Entities/Lighting/ceilingLight04Prefab"/> <property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!--  Ceiling Light 07 is the Fluorescent Light -->
+
+<block name="modLightEndTableLampPlayer">
+	<property name="Class" value="PoweredLight"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Extends" value="porchLight01" param1="HandleFace"/>
+	<property name="CustomIcon" value="endTableLamp"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Lighting/end_table_lightPrefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<!-- new with V1.1-->
+
+<block name="modLightDeskLampLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01" param1="HandleFace"/>
+	<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="CustomIcon" value="deskLampLight"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<drop event="Destroy" name="resourceScrapBrass" count="3"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+<block name="modLightTableLampLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01" param1="HandleFace"/>
+	<property name="Model" value="Entities/Lighting/table_lampPrefab"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="CustomIcon" value="tableLampLight"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!-- Centered Version of it -->
+<block name="modLightTableLampLightCentered">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="tableLampLight" param1="HandleFace"/>
+	<property name="CustomIcon" value="tableLampLight"/>
+	<property name="Model" value="Entities/Lighting/table_lamp_centeredPrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="GndAlign" value="1"/>
+</block>
+
+<block name="modLightWorkLightPOI">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01" param1="HandleFace"/>
+	<property name="Model" value="Entities/Lighting/work_lightPrefab"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="CustomIcon" value="workLightPOI"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<porperty name="Light" value="0"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<block name="modLightCeilingFan">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Lighting/ceiling_fanPrefab"/> <property name="HandleFace" value="Top"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="1"/>
+		<property name="resourceElectricParts" value="3"/>
+		<property name="resourceMechanicalParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" tag="salvageHarvest"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mglass"/>
+	<property name="CustomIcon" value="ceilingFanLight"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<block name="modLightSignExitLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="Model" value="Entities/Lighting/exit_signPrefab"/> <property name="HandleFace" value="South"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="CustomIcon" value="signExitLight"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.2"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<block name="modLightIndustrialLight02Red">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="Model" value="Entities/Lighting/industrial_light_02_redPrefab"/> <property name="HandleFace" value="Top"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="CustomIcon" value="industrialLight02Red"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="5"/>
+	<property name="Light" value="0.4"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!-- Added with Version 1.4 (Alpha 20)-->
+<block name="modLightTrackLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+
+	<property name="Model" value="Entities/Lighting/trackLightPrefab"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="trackLight"/>
+</block>
+
+<block name="modLightRecessedLight_small">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+
+    <property name="Model" value="Entities/Lighting/recessedLightPrefab"/>
+	<property name="HandleFace" value="Top"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="recessedLight"/>
+</block>
+
+<block name="modLightRecessedLight_large">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="recessedLight"/>
+
+	<property name="CustomIcon" value="recessedLight"/>
+	<property name="MultiBlockDim" value="2,1,2"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="recessedLight"/>
+</block>
+
+
+<block name="modLightFluorescentLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="ceilingLight07" param1="HandleFace"/>
+
+	<property name="Model" value="Entities/Lighting/fluorescentLightPrefab"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="OnlySimpleRotations" value="false"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="fluorescentLight"/>
+</block>
+
+<block name="modLightFluorescentLightBayIntact">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="ceilingLight07" param1="HandleFace"/>
+
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Lighting/fluorescentLightBayIntactPrefab"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="ModelOffset" value="0,0.5,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="fluorescentLightBayIntact"/>
+</block>
+
+<block name="modLightSconce1Light">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+
+	<property name="Model" value="Entities/Lighting/sconce_1_Prefab"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="sconce1Light"/>
+</block>
+
+
+<block name="modLightstreetLight01">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="streetLight01" param1="HandleFace"/>
+	<property name="IndexName" value="POILight"/>
+
+	<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterExchange" value="streetLightImposter"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Model" value="Entities/Lighting/lightStreetLamp01Prefab"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="-1"/>
+	<property name="Group" value="Science"/>
+	<property name="FilterTags" value="MC_building,SC_lighting,MC_outdoor,SC_decor"/>
+	<property name="SortOrder1" value="70a0"/>
+
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="streetLight01"/>
+</block>
+
+
+<block name="modLightStreetLightClassic">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01" param1="HandleFace"/>
+
+	<property name="Model" value="Entities/Lighting/streetLamp_ClassicPrefab"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,5,1"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="4,6" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="streetLightClassic"/>
+</block>
+
+<block name="modLightprojectorCeiling">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="spotlightNailedDownPOI"/>
+
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Electrical/projectorCeilingPrefab"/>
+
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="projectorCeiling"/>
+</block>
+
+<block name="modLightprojectorTableTop">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="spotlightNailedDownPOI"/>
+
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Electrical/projectorTableTopPrefab"/>
+
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="CustomIcon" value="projectorTableTop"/>
+</block>
+
+
+	</append>
+
+
+
+</configs>

@@ -1,0 +1,2 @@
+Key,English
+WritableStorageBoxTier2,Writable StorageT2

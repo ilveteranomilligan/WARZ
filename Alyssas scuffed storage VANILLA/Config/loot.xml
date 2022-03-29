@@ -1,0 +1,6 @@
+<configs>
+	<append xpath="/lootcontainers">
+		<lootcontainer name="WritableStorageBoxTier2" size="10,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		</lootcontainer>
+	</append>
+</configs>

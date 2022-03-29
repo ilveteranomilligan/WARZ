@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="WritableStorageBoxTier2">
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="LootList" value="WritableStorageBoxTier2" />
+			<property name="Model" value="#Entities/LootContainers?crate_storeSignablePrefab.prefab"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="Texture" value="572"/>
+		    <property name="DescriptionKey" value="WritableStorageBoxTier2"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="10"/>
+				</property>
+		</block>
+	</append>
+</configs>

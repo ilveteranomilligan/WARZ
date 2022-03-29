@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/recipes"> 
+		<recipe name="WritableStorageBoxTier2" craft_time="15" count="1" scrapable="False" >
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceNail" count="20"/>
+		</recipe>
+	</append>
+</configs>

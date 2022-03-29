@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="20k Item Stack Limit" />
+        <Description value="Increase stack limit size" />
+        <Author value="Deadlee6" />
+        <Version value="A20(b238)" />
+    </ModInfo>
+</xml>
+

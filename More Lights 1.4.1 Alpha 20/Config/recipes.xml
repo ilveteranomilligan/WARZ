@@ -1,0 +1,205 @@
+<!-- 
+Here is a template XML format for xpath for A17+ 
+
+This XML file has to be named the same as its vanilla file. If you are editing items.xml, this file needs to be called items.xml
+
+Here are some example xpath:
+	Changes the Light value to 0.45
+  	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='LightValue']/@value">0.45</set>
+	
+	Adds in a new torch at the bottom of the items.xml
+	<append xpath="/items" >
+		<item name="AnothermeleeToolTorch">
+			<property name="Extends" value="meleeToolTorch"/>
+			<property name="LightValue" value="1" />
+		</item>
+	</append>
+	
+	Deletes the torch.
+	<remove xpath="/items/item[@name='meleeToolTorch']" />
+	
+-->
+<configs>
+	<append xpath="/recipes" >	
+<!-- resourceScrapIron -->
+<!-- resourceBrokenGlass -->
+<!-- resourceWood -->
+<!-- resourceCloth-->
+<!-- resourceHeadlight-->
+
+<!-- Porch Lights 04 -->
+<!-- <recipe name="porchLight04Brass_player" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedIron" count="2"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceScrapBrass" count="3"/>
+</recipe> -->
+	<!--	<recipe name="porchLight04Brass_player" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="resourceScrapBrass" count="3"/>
+		</recipe> -->
+
+		<recipe name="modLightPorchLight01" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		
+		<recipe name="modLightPorchLight04Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapBrass" count="10"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		<recipe name="modLightPorchLight04" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="6"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		<recipe name="modLightCeilingLight02" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+			
+		<recipe name="modLightCeilingLight02Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapBrass" count="7"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		<recipe name="modLightCeilingLight05" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceBrokenGlass" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		<recipe name="modLightCeilingLight05Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceScrapBrass" count="4"/>
+			<ingredient name="resourceBrokenGlass" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+	
+		<recipe name="modLightCeilingLight04" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe> 
+
+		<recipe name="modLightEndTableLampPlayer" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceCloth" count="3"/>
+		</recipe> 
+	
+		<recipe name="modLightDeskLampLight" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapBrass" count="4"/>
+			<ingredient name="resourceBrokenGlass" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+
+		<recipe name="modLightTableLampLight" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+
+		<recipe name="modLightTableLampLightCentered" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+
+		<recipe name="modLightWorkLightPOI" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+		</recipe>
+
+		<recipe name="modLightCeilingFan" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+
+		<recipe name="modLightSignExitLight" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+
+		<recipe name="modLightIndustrialLight02Red" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceScrapIron" count="5"/>
+		</recipe>
+		
+		<recipe name="modLightTrackLight" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="8"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceBrokenGlass" count="8"/>
+		</recipe>
+
+		<recipe name="modLightRecessedLight_small" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceBrokenGlass" count="2"/>
+		</recipe>
+
+		<recipe name="modLightRecessedLight_large" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="8"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceBrokenGlass" count="3"/>
+		</recipe>
+				
+		<recipe name="modLightFluorescentLight" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="8"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="modLightFluorescentLightBayIntact" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="8"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="modLightSconce1Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceBrokenGlass" count="5"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+
+		<recipe name="modLightstreetLight01" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceBrokenGlass" count="3"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+	
+		<recipe name="modLightStreetLightClassic" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceBrokenGlass" count="6"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="modLightprojectorCeiling" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceBrokenGlass" count="2"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+
+		<recipe name="modLightprojectorTableTop" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceBrokenGlass" count="2"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+
+
+	</append>
+
+</configs>
